@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
 	return (
 		<section>
-			<section className="w-4/5 m-auto flex justify-between">
+			<section className="w-4/5 m-auto flex justify-between bg-white">
 				<img className='object-contain flex max-lg:w-1/4' src={hero1} alt="hero" />
 				<img className='object-contain flex max-lg:w-1/3' src={hero2} alt="hero" />
 				<img className='object-contain flex max-lg:w-1/3' src={hero3} alt="hero" />
