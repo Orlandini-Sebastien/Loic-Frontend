@@ -30,10 +30,12 @@ const Header = () => {
 				</div>
 			</section>
 
-			<section>
-				<Link to={'/'}></Link>
+			<section className="max-md:text-xs md:w-4/5 max-md:w-11/12 m-auto flex justify-between items-center my-4">
+				<Link to={'/'}>Accueil</Link>
+				<Link to={'/deplacement'}>Déplacement</Link>
+				<Link to={'/contact'}>Contact</Link>
 			</section>
-		</section>
+		</section >
 	)
 }
 export default Header
