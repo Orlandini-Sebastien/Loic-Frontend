@@ -5,7 +5,6 @@ import question from '../assets/questions2.png'
 import PageCarousel from '../utils/PageCarousel'
 import fleche from '../assets/fleche.png'
 
-
 const HomePage = () => {
 	const [carousel, setCarousel] = useState(0)
 	const handleCarouselLeft = () => {
@@ -23,20 +22,22 @@ const HomePage = () => {
 		}
 	}
 	return (
-		<section className="w-4/5 m-auto bg-slate-100">
-			<h1 className="text-2xl my-10 justify-center flex text-center font-bold ">
+		<section className="md:w-4/5 max-md:w-11/12 m-auto bg-slate-100">
+			<h1 className="max-md:text-lg text-2xl my-10 justify-center flex text-center font-bold ">
 				A.M.Info est une société spécialisée dans le dépannage informatique
 			</h1>
 
-			<div className="flex justify-between w-full  rounded my-10">
+			<div className="max-md:flex-col flex justify-between w-full  rounded my-10 max-md:items-center">
 				<img
-					className="h-40  bg-vert-loic/10 w-40 border-solid border-2 border-vert-loic rounded-full object-cover mr-9 shadow-md shadow-vert-loic "
+					className="max-md:mb-4 h-40  bg-vert-loic/10 w-40 border-solid border-2 border-vert-loic rounded-full object-cover md:mr-9 shadow-md shadow-vert-loic "
 					src={depannage}
 					alt="depannage"
 				/>
-				<div className="w-full border-2 border-solid border-vert-loic self-center rounded-xl bg-vert-loic/20 shadow-md shadow-vert-loic  ">
-					<div className="text-2xl font-semibold">Nous vous proposons :</div>
-					<div className="flex flex-col  h-full ">
+				<div className="w-full border-2 border-solid border-vert-loic self-center rounded-xl max-md:bg-vert-loic/40 bg-vert-loic/20 shadow-md shadow-vert-loic  ">
+					<div className="max-md:text-lg text-2xl font-semibold">
+						Nous vous proposons :
+					</div>
+					<div className="max-md:text-xs flex flex-col  h-full ">
 						<div>Une assistance technique et multimédia.</div>
 						<div>Des conseils avant achat.</div>
 						<div>
@@ -50,19 +51,19 @@ const HomePage = () => {
 			<div className="my-10">
 				<p className="flex justify-between w-full items-center">
 					<div className="w-full border ">
-						<div className="text-2xl flex justify-center font-semibold">
+						<div className="max-md:text-lg   text-2xl flex justify-center font-semibold">
 							Nos différents engagements
 						</div>
-						<div className="flex  h-full justify-around items-center ">
-							<div className="w-1/2">
-								<div className="border-2 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 shadow-md shadow-vert-loic   ">
+						<div className="max-md:text-xs flex  h-full justify-around items-center relative">
+							<div className="w-1/2 z-10">
+								<div className="border-2  max-md:bg-vert-loic/40 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl  my-6 shadow-md shadow-vert-loic   ">
 									A.M.Info intervient dans un délai de 48 heures maximum 7j/7.
 								</div>
-								<div className="border-2 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 mr-4 shadow-md shadow-vert-loic ">
+								<div className="border-2  max-md:bg-vert-loic/40 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 mr-4 shadow-md shadow-vert-loic ">
 									Quel que soit votre problème, vous connaitrez le coût exact de
 									l'intervention.
 								</div>
-								<div className="border-2 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 mr-6 shadow-md shadow-vert-loic ">
+								<div className="border-2  max-md:bg-vert-loic/40 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 mr-6 shadow-md shadow-vert-loic ">
 									Pour chaque intervention de dépannage informatique à domicile,
 									vous disposez de cinq jours d'assistance technique durant
 									laquelle, si le même problème réapparaît, A.M.Info s'engage à
@@ -71,21 +72,21 @@ const HomePage = () => {
 							</div>
 
 							<img
-								className="h-40 w-40 bg-vert-loic/20 border-vert-loic border-solid border-2 rounded-full object-cover shadow-md shadow-vert-loic  "
+								className="max-md:absolute max-md:z-0  h-40 w-40 bg-vert-loic/20 border-vert-loic border-solid border-2 rounded-full object-cover shadow-md shadow-vert-loic  "
 								src={engagement}
 								alt="engagement"
 							/>
-							<div className="w-1/2">
-								<div className="border-2 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 ml-6 shadow-md shadow-vert-loic ">
+							<div className="w-1/2 z-10">
+								<div className="border-2 max-md:bg-vert-loic/40 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 ml-6 shadow-md shadow-vert-loic ">
 									Le respect de la vie privée : en aucun cas vos fichiers ne
 									seront ouverts et ils se limiteront à un simple transfert de
 									données.
 								</div>
-								<div className="border-2 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 ml-4 shadow-md shadow-vert-loic ">
+								<div className="border-2 max-md:bg-vert-loic/40 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 ml-4 shadow-md shadow-vert-loic ">
 									Les interventions sur votre materiel sont seulement avec votre
 									accord pour toute réparation.
 								</div>
-								<div className="border-2 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 shadow-md shadow-vert-loic ">
+								<div className="border-2 max-md:bg-vert-loic/40 bg-vert-loic/20 border-vert-loic border-solid  rounded-xl my-6 shadow-md shadow-vert-loic ">
 									A tester votre materiel pour une utilisation optimale.
 								</div>
 							</div>
@@ -94,13 +95,13 @@ const HomePage = () => {
 				</p>
 			</div>
 
-			<h1 className="text-2xl  flex justify-center mb-8 font-semibold">
+			<h1 className="max-md:text-lg text-2xl  flex justify-center mb-8 font-semibold">
 				Questions Fréquentes
 			</h1>
 
-			<div className="my-4 flex flex-wrap justify-center  items-center rounded gap-4 ">
+			<div className="my-4 flex flex-wrap justify-center  items-center rounded gap-4 relative ">
 				<img
-					className="h-40 w-40 bg-vert-loic/20 border-solid border-2 border-vert-loic rounded-full object-fill lg:mr-9 shadow-md shadow-vert-loic  "
+					className="max-md:opacity-50 max-md:absolute max-md:top-0 h-40 w-40 bg-vert-loic/20 border-solid border-2 border-vert-loic rounded-full object-fill lg:mr-9 shadow-md shadow-vert-loic  "
 					src={question}
 					alt="engagement"
 				/>
@@ -108,13 +109,20 @@ const HomePage = () => {
 				<div className="flex flex-col h-40 ">
 					<div className="flex justify-between items-center  h-full ">
 						<button className="w-20 px-4" onClick={handleCarouselLeft}>
-							<img className="rotate-180 hover:scale-110 " src={fleche} alt="fleche" />
+							<img
+								className="rotate-180 hover:scale-110  "
+								src={fleche}
+								alt="fleche"
+							/>
 						</button>
 						<div className=" border-2 border-solid rounded-xl flex items-center border-vert-loic bg-vert-loic/20 h-48 shadow-md shadow-vert-loic ">
 							<PageCarousel carousel={carousel} />
 						</div>
 
-						<button className="hover:scale-110 w-20 px-4" onClick={handleCarouselRight}>
+						<button
+							className="hover:scale-110 w-20 px-4"
+							onClick={handleCarouselRight}
+						>
 							<img src={fleche} alt="fleche" />
 						</button>
 					</div>

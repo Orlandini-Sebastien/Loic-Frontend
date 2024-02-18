@@ -107,7 +107,9 @@ const PageCarousel = ({ carousel }: PageCarouselProps) => {
 						</div>
 					)
 				}
-				containerCss="w-96 text-center   "
+				containerCss="md:w-96 max-md:w-60 text-center max-md:text-xs  "
+                flipTrigger='onClick'
+
 			></ReactFlipCard>
 		</div>
 	)
